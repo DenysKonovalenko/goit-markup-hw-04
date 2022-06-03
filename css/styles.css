@@ -103,10 +103,28 @@ h2 {
     padding-left: 0px;
 }
 
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .contact:not(:last-child) {
     margin-right: 50px;
 }
+
+.icon-contacts {
+    fill: #757575;
+    margin-right: 10px;
+}
+
+.link:hover > .icon-contacts {
+    fill: #2196F3;
+}
+
 .contact-mail, .contact-tel {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     font-style: normal;
     font-weight: 500;
@@ -410,7 +428,7 @@ footer {
 
 footer > .container {
     display: flex;
-    flex-direction: column;
+    align-items: center;
 }
 
 footer .logo {
@@ -441,6 +459,61 @@ address {
     letter-spacing: 0.03em;   
     color: rgba(255, 255, 255, 0.6);
 }
+
+/* footer-social-network */
+
+.footer-social-links {
+    margin-left: 70px;
+}
+
+.footer-social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.title-social-links {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.footer-social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    
+    height: 44px;
+    width: 44px;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background: #2196F3;
+}
+
+.social-icon {
+    height: 20px;
+    width: 20px;
+    fill: #ffffff;
+}
+
 /* portfolio*/
 
 /*portfolio main*/
@@ -501,32 +574,17 @@ address {
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
 
     margin-top: 0px;
     margin-bottom: 0px;
     padding-left: 0px;
 }
 
-.portfolio-item {
-    margin-right: 30px;
-    margin-bottom: 30px;
-    background: #FFFFFF;
-}
-
-.portfolio-item:nth-child(3n) {
-    margin-right: 0px;
-}
-
-.portfolio-item:nth-child(n+7) {
-    margin-bottom: 0px;
-}
-
-/* .portfolio-item:hover,
-.portfolio-item:focus {
-    border: 1px solid #EEEEEE;
+.portfolio-item:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
-} */
+}
 
 .portfolio-item > .wrapper {
     padding: 20px 24px;
